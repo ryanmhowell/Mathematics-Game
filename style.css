@@ -46,6 +46,56 @@ html {
     padding: 10px;
     position: absolute;
     left: 260px;
+    display: none;
 }
 
+#question {
+    height: 150px;
+    width: 475px;
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Ubuntu";
+    margin: 100px auto 10px auto;
+    background-color: #9d7af4;
+    box-shadow: 0 5px 2px #6045a5;
+}
 
+#instructions {
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25rem;
+    background-color: #8f35ad;
+    width: 475px;
+    margin: auto;
+    padding: 10px 0;
+    box-shadow: 0 4px 3px #411251;
+}
+
+#choices {
+    display: flex;
+    width: 475px;
+    height: 100px;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+.choice {
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    display: inline-flex;
+    border-radius: 4px;
+    box-shadow: 0 4px 2px #444;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: "Ubuntu", sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.choice:hover {
+    background-color: #c598f9;
+    color: white;
+}
