@@ -55,7 +55,7 @@ html {
 
 #question {
     height: 150px;
-    width: 475px;
+    width: 500px;
     text-align: center;
     font-size: 8rem;
     font-family: "Ubuntu";
@@ -72,7 +72,7 @@ html {
     font-family: "Ubuntu", sans-serif;
     font-size: 1.25rem;
     background-color: #8f35ad;
-    width: 475px;
+    width: 500px;
     margin: auto;
     padding: 10px 0;
     box-shadow: 0 4px 3px #411251;
@@ -82,7 +82,7 @@ html {
 
 #choices {
     display: flex;
-    width: 475px;
+    width: 500px;
     height: 100px;
     margin: 10px auto;
     justify-content: space-between;
@@ -153,7 +153,23 @@ html {
     background-color: rgba(68, 244, 48, 0.75);
     border-radius: 4px;
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
 /*    visibility: hidden;*/
     display: none;
 }
 
+#game-over {
+    height: 200px;
+    width: 550px;
+    background: linear-gradient(#e85229, #edd042);
+    position: absolute;
+    top: 180px;
+    left: 45px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
+    display: none;
+}
