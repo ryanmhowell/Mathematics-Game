@@ -12,6 +12,8 @@ html {
     margin: 100px auto;
     padding: 20px;
     box-shadow: 5px 5px 3px #6691d6;
+    -moz-box-shadow: 5px 5px 3px #6691d6;
+    -webkit-box-shadow: 5px 5px 3px #6691d6;
     position: relative;
 }
 
@@ -25,6 +27,8 @@ html {
     left: 500px;
     border-radius: 6px;
     box-shadow: 0 4px 3px #877428;
+    -moz-box-shadow: 0 4px 3px #877428;
+    -webkit-box-shadow: 0 4px 3px #877428;
 }
 
 #correct {
@@ -55,9 +59,11 @@ html {
     text-align: center;
     font-size: 8rem;
     font-family: "Ubuntu";
-    margin: 100px auto 10px auto;
+    margin: 80px auto 10px auto;
     background-color: #9d7af4;
     box-shadow: 0 5px 2px #6045a5;
+    -moz-box-shadow: 0 5px 2px #6045a5;
+    -webkit-box-shadow: 0 5px 2px #6045a5;
 }
 
 #instructions {
@@ -70,6 +76,8 @@ html {
     margin: auto;
     padding: 10px 0;
     box-shadow: 0 4px 3px #411251;
+    -moz-box-shadow: 0 4px 3px #411251;
+    -webkit-box-shadow: 0 4px 3px #411251;
 }
 
 #choices {
@@ -87,15 +95,65 @@ html {
     display: inline-flex;
     border-radius: 4px;
     box-shadow: 0 4px 2px #444;
+    -webkit-box-shadow: 0 4px 2px #444;
+    -moz-box-shadow: 0 4px 2px #444;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
     font-family: "Ubuntu", sans-serif;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
 }
 
-.choice:hover {
+.choice:hover, #start-reset:hover {
     background-color: #c598f9;
     color: white;
 }
+
+.choice:active, #start-reset:active {
+    margin-top: 3px;
+    box-shadow: 0 0 #8035d6;
+}
+
+#start-reset {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 85px;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    box-shadow: 0 4px 2px #444;
+    -webkit-box-shadow: 0 4px 2px #8993ba;
+    -moz-box-shadow: 0 4px 2px #8993ba;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+}
+
+#time-remaining {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    width: 200px;
+    position: absolute;
+    top: 490px;
+    left: 390px;
+    padding: 10px;
+    background-color: rgba(68, 244, 48, 0.75);
+    border-radius: 4px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden;*/
+    display: none;
+}
+
