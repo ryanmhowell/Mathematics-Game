@@ -24,7 +24,7 @@
 
 let score = 0;
 let isPlaying = false;
-const gameLength = 10;
+const gameLength = 30;
 let timeRemaining = gameLength;
 let number1 = 0;
 let number2 = 0;
@@ -39,6 +39,7 @@ let correctAnswer = 0;
 let answers = [];
 
 
+//sets game elements and data back to their starting values
 function resetGame() {
     isPlaying = true;
     score = 0;
@@ -50,7 +51,9 @@ function resetGame() {
 }
 
 
-
+//renders a multiplication problem and stores the correct answer along with
+//3 wrong answers each randomly assigned to a choice button. Stores value 
+//of each choice.
 function generateQuestion() {
       number1 = Math.ceil(Math.random() * 10);
       number2 = Math.ceil(Math.random() * 10);
@@ -94,7 +97,9 @@ function generateQuestion() {
 
 
 
-
+//checks to see if selected answer is correct and notifies player
+//if answer is correct, a new question is generated
+//if answer is wrong, player is asked to try again
 function checkAnswer(guessedAnswer) {
     if(isPlaying) {
         if(correctAnswer === guessedAnswer) {
@@ -141,7 +146,9 @@ function checkAnswer(guessedAnswer) {
 
 
 
-
+//starts countdown timer and generates series of 
+//multiplication problems until timer reaches 0
+//when timer reaches 0, player is shown their score
 function playGame() {
     if(isPlaying) {
         location.reload();
