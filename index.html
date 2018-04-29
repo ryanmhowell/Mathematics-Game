@@ -25,27 +25,28 @@
         Click on the correct answer  
       </div>
       <div id="choices">
-        <div id="choice1" class="choice">
-          12
-        </div>
-        <div id="choice2" class="choice">
+        <div id="choice1" class="choice" onclick="checkAnswer(choice1)">
           
         </div>
-        <div id="choice3" class="choice">
+        <div id="choice2" class="choice" onclick="checkAnswer(choice2)">
+          
+        </div>
+        <div id="choice3" class="choice" onclick="checkAnswer(choice3)">
         
         </div>
-        <div id="choice4" class="choice">
+        <div id="choice4" class="choice" onclick="checkAnswer(choice4)">
         
         </div>
       </div>
-      <div id="start-reset">
+      <div id="start-reset" onclick=playGame()>
         Start Game
       </div>
       <div id="time-remaining">
-        Time remaining: <span id="time-value">60</span> sec  
+        Time remaining: <span id="time-value"></span> sec  
       </div>
       <div id="game-over">
-       
+        <p>Game Over!</p>
+        <p>Your score is <span id="final-score"></span></p>
       </div>
     </div>
       
